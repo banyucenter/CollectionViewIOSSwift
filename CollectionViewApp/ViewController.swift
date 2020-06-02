@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    //data
     let buku = [
         (nama: "Kursus PHP MySQL", gambar: "buku1"),
         (nama: "Kursus Node.Js", gambar: "buku2"),
