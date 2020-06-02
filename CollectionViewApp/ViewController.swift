@@ -14,14 +14,14 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     
     //data
     let buku = [
-        (nama: "Kursus PHP MySQL", gambar: "buku1"),
-        (nama: "Kursus Node.Js", gambar: "buku2"),
-        (nama: "Kursus Golang", gambar: "buku3"),
-        (nama: "Kursus Ruby", gambar: "buku4"),
-        (nama: "Kursus Python",  gambar: "buku5"),
-        (nama: "Kursus PHP MySQL", gambar: "buku6"),
-        (nama: "Kursus Node.Js", gambar: "buku7"),
-        (nama: "Kursus Golang", gambar: "buku8")
+        (nama: "Kursus PHP MySQL", gambar: "buku1", harga:"560000"),
+        (nama: "Kursus Node.Js", gambar: "buku2", harga:"660000"),
+        (nama: "Kursus Golang", gambar: "buku3", harga:"660000"),
+        (nama: "Kursus Ruby", gambar: "buku4", harga:"660000"),
+        (nama: "Kursus Python",  gambar: "buku5", harga:"660000"),
+        (nama: "Kursus PHP MySQL", gambar: "buku6", harga:"760000"),
+        (nama: "Kursus Node.Js", gambar: "buku7", harga:"860000"),
+        (nama: "Kursus Golang", gambar: "buku8", harga:"460000")
     
     ]
     
@@ -64,6 +64,20 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let bukus = buku[indexPath.row]
+        
+        let Vcku = storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
+        
+        Vcku.stringNama = bukus.nama
+        Vcku.stringGambar = bukus.gambar
+        Vcku.stringHarga = bukus.harga
+        
+        navigationController?.pushViewController(Vcku, animated: true)
+    }
+    
     
 
 }

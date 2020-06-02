@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284EB8BB2486449C00671B48 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284EB8BA2486449C00671B48 /* DetailViewController.swift */; };
 		28C78B78248618A50014C034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C78B77248618A50014C034 /* AppDelegate.swift */; };
 		28C78B7A248618A50014C034 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C78B79248618A50014C034 /* SceneDelegate.swift */; };
 		28C78B7C248618A50014C034 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C78B7B248618A50014C034 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284EB8BA2486449C00671B48 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		28C78B74248618A50014C034 /* CollectionViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C78B77248618A50014C034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C78B79248618A50014C034 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				28C78B82248618AA0014C034 /* LaunchScreen.storyboard */,
 				28C78B85248618AA0014C034 /* Info.plist */,
 				28C78B8B248619A90014C034 /* CollectionViewCell.swift */,
+				284EB8BA2486449C00671B48 /* DetailViewController.swift */,
 			);
 			path = CollectionViewApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				28C78B7C248618A50014C034 /* ViewController.swift in Sources */,
 				28C78B78248618A50014C034 /* AppDelegate.swift in Sources */,
+				284EB8BB2486449C00671B48 /* DetailViewController.swift in Sources */,
 				28C78B8C248619A90014C034 /* CollectionViewCell.swift in Sources */,
 				28C78B7A248618A50014C034 /* SceneDelegate.swift in Sources */,
 			);
